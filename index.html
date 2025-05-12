@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Notte Degli Oscar🏆</title>
+
+  <!-- STILE RESPONSIVE -->
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #fefefe;
+      line-height: 1.6;
+    }
+
+    h1 {
+      font-size: 1.8em;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin-bottom: 1em;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      font-size: 1em;
+      line-height: 1.4;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      font-size: 1em;
+      background-color: #2b2b2b;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      margin: 10px 0;
+      border-radius: 8px;
+      display: block;
+    }
+
+    audio {
+      width: 100%;
+      margin: 10px 0;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    #feedback {
+      font-weight: bold;
+      color: red;
+    }
+
+    #resetButton {
+      background-color: #ccc;
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>🎥 La Notte Degli Oscar 🎬</h1>
+
+  <div id="game" class="hidden">
+    <!-- Messaggio finale -->
+    <p id="finalMessage" class="hidden">🎉 Congratulazioni, questo è il tuo ultimo indizio!</p>
+
+    <!-- Media (immagine o audio) -->
+    <p><strong>Luogo da raggiungere:</strong></p>
+    <div id="mediaContainer">
+      <img id="placeImage" src="" alt="Luogo" />
+      <audio id="placeAudio" controls class="hidden">   <!--DUBBIO SU QUESTE RIGHE 96-99-->
+        <source src="" type="audio/mpeg">
+        Il tuo browser non supporta l'audio.
+      </audio>
+    </div>
+
+    <!-- Indizio testuale -->
+    <p id="hint"><strong>Indizio da risolvere:</strong></p>
+
+    <!-- Risposta da inserire -->
+    <div id="inputSection">
+      <p><strong>Risposta da inserire:</strong></p>
+      <input type="text" id="answer" placeholder="Rispondi...">
+      <button onclick="checkAnswer()">Controlla</button>
+    </div>
+
+    <!-- Feedback -->
+    <p id="feedback"></p>
+
+    <!-- Reset -->
+    <button id="resetButton" onclick="resetGame()" style="display:none;">🔄 Reset Gioco</button>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
