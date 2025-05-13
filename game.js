@@ -27,7 +27,7 @@ const hints = {
   2: "Qual è il suo numero civico?",
   3: "Fino a quante persone possono usarlo?",
   4: "Che cosa ha ai sui piedi?",
-  5: "INDIZIO ALTALENE",
+  5: "All’entrata, a sinistra, quali numeri ci sono sulla targhetta dopo il punto?",
   6: "Corri e trova la statuetta per primo!"
 };
 
@@ -37,7 +37,7 @@ const answers = {
   2: "2 BIS", //numero civico antenna
   3: "10", // numero posti lavatoio
   4: "rose", //palme
-  5: "???", //altalena
+  5: "7863", //altalena
 };
 
 // Caricamento o reset
