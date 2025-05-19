@@ -28,7 +28,7 @@ const hints = {
   3: "Fino a quante persone possono usarlo?",
   4: "Che cosa ha ai sui piedi?",
   5: "All’entrata, a sinistra, quali numeri ci sono sulla targhetta dopo il punto?",
-  6: "Corri e trova la statuetta per primo!"
+  6: "Troverai indicazioni sul posto!"
 };
 
 //Mappa risposte corrette personalizzabili
