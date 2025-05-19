@@ -26,7 +26,7 @@ const hints = {
   1: "Quante farfalle ci sono sui lati delle porte?",
   2: "Qual è il suo numero civico?",
   3: "Fino a quante persone possono usarlo?",
-  4: "Che cosa ha ai sui piedi?",
+  4: "Che cosa ha sui piedi?",
   5: "All’entrata, a sinistra, quali numeri ci sono sulla targhetta dopo il punto?",
   6: "Troverai indicazioni sul posto!"
 };
